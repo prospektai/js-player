@@ -6,7 +6,8 @@
 	font-style: normal;
 }
 
-body {
+html, body {
+    height: 100%;
     /* background-color: #EEF2F7; */
     background: #757F9A;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */

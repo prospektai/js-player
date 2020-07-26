@@ -14,19 +14,19 @@
     <body>
 
         <div id="player-container" class="container-fluid h-100 pt-3">
-            <div id="main" class="row align-items-center container-fluid">
-                <div class="col-sm-3">
+            <div id="main" class="col-sm-12 row align-items-center justify-content-center container-fluid">
+                <div class="col-sm-3 ml-5">
                     <img id="track-img" src="tracks/VoiceOfNature_Rosas_para_Maria/cover.jpg" class="img-fluid" alt="Album Cover art" />
                 </div>
 
-                <div class="col-sm-3 align-items-bottom">
+                <div class="col-sm-2 align-items-bottom">
                     <h1 id="track-artist">Voice of Nature</h1>
                     <h1 id="track-title">Rosas para Maria</h1>
                 </div>
 
-                <div id="track-controls" class="container-fluid text-center col">
+                <div id="track-controls" class="col-sm-3 container-fluid text-center col ml-2 mr-5">
 
-                    <div id="genre-picker" class="col-sm-12 btn-group btn-group-toggle" data-toggle="buttons">
+                    <div id="genre-picker" class="col-sm btn-group btn-group-toggle" data-toggle="buttons">
                         <label class="btn btn-secondary active">
                           <input type="radio" name="options" id="option1" onclick="switchGenre('rock')" autocomplete="off" checked> Rock
                         </label>
@@ -34,31 +34,24 @@
                           <input type="radio" name="options" id="option2" onclick="switchGenre('hard_rock')" autocomplete="off"> Hard rock
                         </label>
                         <label class="btn btn-secondary">
-                          <input type="radio" name="options" id="option3" onclick="switchGenre('singer_songwriter')" autocomplete="off"> Singer/Songwriter
+                          <input type="radio" name="options" id="option3" onclick="switchGenre('singer_songwriter')" autocomplete="off"> Singer<br>Songwriter
                         </label>
                         <label class="btn btn-secondary">
                             <input type="radio" name="options" id="option2" onclick="switchGenre('soft_rock')" autocomplete="off"> Soft rock
                         </label>
                     </div>
 
-                    <div id="mix-picker" class="col-sm-12 btn-group btn-group-toggle pt-2" data-toggle="buttons">
+                    <div id="mix-picker" class="col-sm btn-group btn-group-toggle pt-2" data-toggle="buttons">
                         <label class="btn btn-secondary active">
                           <input type="radio" name="options" id="premix-btn" onclick="switchMix('pre')" autocomplete="off" checked> Pre-mixed
                         </label>
-                        <label class="btn btn-secondary">
+                        <label class="btn btn-primary">
                           <input type="radio" name="options" id="mixed-btn" onclick="switchMix('mix')" autocomplete="off"> Mixed
                         </label>
-                        <label class="btn btn-secondary">
+                        <label class="btn btn-danger">
                           <input type="radio" name="options" id="mastered-btn" onclick="switchMix('master')" autocomplete="off"> Mastered
                         </label>
                     </div>
-
-                    <!-- <div id="play-controls" class="pt-3">
-                        <i class="fa fa-play fa-2x mr-2" aria-hidden="true"></i>
-                        <i class="fa fa-pause fa-2x mr-2" aria-hidden="true"></i>
-                        <i class="fa fa-fast-backward fa-2x mr-2" aria-hidden="true"></i>
-                        <i class="fa fa-fast-forward fa-2x mr-2" aria-hidden="true"></i>
-                    </div> -->
 
                     <div id="play-controls" class="col-sm-6 btn-group btn-group-toggle pt-2" data-toggle="buttons">
                         <label class="btn btn-secondary">

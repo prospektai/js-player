@@ -3,31 +3,31 @@ const progress = document.getElementById('progress')
 let progressTimer = null
 
 let rock = {
-    pre: new Howl({ src: 'tracks/VoiceOfNature_Rosas_para_Maria/pre.mp3', html5: true }),
-    mix: new Howl({ src: 'tracks/VoiceOfNature_Rosas_para_Maria/mix.mp3', html5: true }),
-    master: new Howl({ src: 'tracks/VoiceOfNature_Rosas_para_Maria/master.mp3', html5: true })
+    pre: new Howl({ src: 'https://static.wixstatic.com/mp3/cd504d_fc3654574bf64132ba0b88f82af5680e.mp3', html5: true }),
+    mix: new Howl({ src: 'https://static.wixstatic.com/mp3/cd504d_60027ff8c98d4087a5ad424710d96818.mp3', html5: true }),
+    master: new Howl({ src: 'https://static.wixstatic.com/mp3/cd504d_b9f628655f274df5afdff986bee28e8b.mp3', html5: true })
 }
 
 let hard_rock = {
-    pre: new Howl({ src: 'tracks/Corey_Reflections/pre.wav', html5: true }),
-    mix: new Howl({ src: 'tracks/Corey_Reflections/mix.wav', html5: true }),
-    master: new Howl({ src: 'tracks/Corey_Reflections/master.wav', html5: true })
+    pre: new Howl({ src: 'https://static.wixstatic.com/mp3/cd504d_197f58b059a445c58789055eb02e5ba2.wav', html5: true }),
+    mix: new Howl({ src: 'https://static.wixstatic.com/mp3/cd504d_6e3cea775a1e47299c29adcb1f6de07f.wav', html5: true }),
+    master: new Howl({ src: 'https://static.wixstatic.com/mp3/cd504d_4af74efca5ec4bab88b05c5b89194736.wav', html5: true })
 }
 
 let singer_songwriter = {
-    pre: new Howl({ src: 'tracks/MarySpender_Someone_Better/pre.wav', html5: true }),
-    mix: new Howl({ src: 'tracks/MarySpender_Someone_Better/mix.wav', html5: true }),
-    master: new Howl({ src: 'tracks/MarySpender_Someone_Better/master.wav', html5: true })
+    pre: new Howl({ src: 'https://static.wixstatic.com/mp3/cd504d_197f58b059a445c58789055eb02e5ba2.wav', html5: true }),
+    mix: new Howl({ src: 'https://static.wixstatic.com/mp3/cd504d_6e3cea775a1e47299c29adcb1f6de07f.wav', html5: true }),
+    master: new Howl({ src: 'https://static.wixstatic.com/mp3/cd504d_4af74efca5ec4bab88b05c5b89194736.wav', html5: true })
 }
 
 let soft_rock = {
-    pre: new Howl({ src: 'tracks/Steve_Maggiora_Whiskey/pre.mp3', html5: true }),
-    mix: new Howl({ src: 'tracks/Steve_Maggiora_Whiskey/mix.mp3', html5: true }),
-    master: new Howl({ src: 'tracks/Steve_Maggiora_Whiskey/master.mp3', html5: true })
+    pre: new Howl({ src: 'https://static.wixstatic.com/mp3/cd504d_25ea0210cfeb4a25b15279db2bc18762.mp3', html5: true }),
+    mix: new Howl({ src: 'https://static.wixstatic.com/mp3/cd504d_524b3fd2cdb74eb68a02b9eda2a43dac.mp3', html5: true }),
+    master: new Howl({ src: 'https://static.wixstatic.com/mp3/cd504d_fefa202c60d548c08d54ea41d5cdef6a.mp3', html5: true })
 }
 
 let current = {
-    path: 'tracks/VoiceOfNature_Rosas_para_Maria/',
+    img: 'https://static.wixstatic.com/media/cd504d_2fa458ffd1dc4a2c840f82fdb6d706c1~mv2.jpg',
     artist: 'Voice of Nature',
     title: 'Rosas para Maria',
     mix: 'pre',
@@ -44,28 +44,28 @@ function switchGenre(genre){
 
     switch(genre){
         case 'rock':
-            current.path = 'tracks/VoiceOfNature_Rosas_para_Maria/'
+            current.img = 'https://static.wixstatic.com/media/cd504d_2fa458ffd1dc4a2c840f82fdb6d706c1~mv2.jpg'
             current.artist = 'Voice of Nature'
             current.title = 'Rosas para Maria'
             current.genre = rock
             current.sound = rock.pre
             break
         case 'hard_rock':
-            current.path = 'tracks/Corey_Reflections/'
-            current.artist = 'Corey'
-            current.title = 'Reflections'
+            current.img = 'https://static.wixstatic.com/media/cd504d_2b2a6b1e44744cccb335d0852d98b80e~mv2.jpg'
+            current.artist = 'Mary Spender'
+            current.title = 'Someone Better'
             current.genre = hard_rock
             current.sound = hard_rock.pre
             break
         case 'singer_songwriter':
-            current.path = 'tracks/MarySpender_Someone_Better/'
+            current.img = 'https://static.wixstatic.com/media/cd504d_2b2a6b1e44744cccb335d0852d98b80e~mv2.jpg'
             current.artist = 'Mary Spender'
             current.title = 'Someone Better'
             current.genre = singer_songwriter
             current.sound = singer_songwriter.pre
             break
         case 'soft_rock':
-            current.path = 'tracks/Steve_Maggiora_Whiskey/'
+            current.img = 'https://static.wixstatic.com/media/cd504d_0c54f2b1ebed42239e31484793036dcd~mv2.jpg'
             current.artist = 'Steve Maggiora'
             current.title = 'Whiskey'
             current.genre = soft_rock
@@ -73,7 +73,7 @@ function switchGenre(genre){
             break
     }
     
-    img.src = current.path + 'cover.jpg'
+    img.src = current.img
     track_artist.innerText = current.artist
     track_title.innerText = current.title
 
