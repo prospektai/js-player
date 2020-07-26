@@ -1,0 +1,35 @@
+/* Proxima Nova font */
+@font-face {
+    font-family: 'Proxima Nova Lt';
+    src: url('./fonts/proxima.woff') format('woff');
+    font-weight: 600;
+	font-style: normal;
+}
+
+body {
+    /* background-color: #EEF2F7; */
+    background: #757F9A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+    font-family: 'Proxima Nova Lt';
+    font-size: 3rem;
+    color: rgb(233, 233, 233);
+}
+
+h3 {
+    font-family: 'Proxima Nova Lt';
+    font-size: 1rem;
+    color: rgb(29, 29, 29);
+}
+
+img {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+              0 2px 2px rgba(0,0,0,0.11), 
+              0 4px 4px rgba(0,0,0,0.11), 
+              0 8px 8px rgba(0,0,0,0.11), 
+              0 16px 16px rgba(0,0,0,0.11), 
+              0 32px 32px rgba(0,0,0,0.11);
+}
